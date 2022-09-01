@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Branch Details!</h3>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">City</th>
+                <th scope="col">Email</th>
+                <th scope="col">Name</th>
+                <th scope="col">PhoneNo</th>
+                <th scope="col">Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let r of result.t">
+                <td>{{r.admin.id}}</td>
+                <td>{{r.city}}</td>
+                <td>{{r.email}}</td>
+                <td>{{r.name}}</td>
+                <td>{{r.phone}}</td>
+                <td><button type="button" [routerLink]="['/updateBranch',r.id]" [disabled]="loginId!=r.admin.id" >Update</button></td>
+                <!--         <td><button type ="button" (click)="deleteProduct(r._id)">Delete</button></td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>

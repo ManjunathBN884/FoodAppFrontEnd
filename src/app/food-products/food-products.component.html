@@ -1,0 +1,27 @@
+<div class="container">
+    <h3>Food Products!</h3>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <!-- <th scope="col">City</th> -->
+                <!-- <th scope="col">Email</th> -->
+                <th scope="col">Availability</th>
+                <th scope="col">Category</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let r of result.t">
+                <td>{{r.availability}}</td>
+                <td>{{r.category}}</td>
+                <td>{{r.name}}</td>
+                <td>{{r.price}}</td>
+                <td><button type="button" [routerLink]="['/updateProduct',r.id]">Update</button></td>
+                <td><button type ="button" (click)="deleteProduct(r.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 

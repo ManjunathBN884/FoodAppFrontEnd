@@ -1,0 +1,89 @@
+<div >
+  <div class="card bg-dark text-black">
+    <img src="https://th.bing.com/th?q=Concrete+Floor+Texture+HD&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247" alt="Card image" width="100%" height="100%">
+    <div class="container" class="card-img-overlay" >
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="home" href="#">FoodApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Admin
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="branch" href="#">Branch Details</a>
+            <a class="dropdown-item" routerLink="addBranch" href="#">Add Branch</a>
+            <!-- <a class="dropdown-item" routerLink="saveProduct" href="#">Add Food Products</a> -->
+            <!-- <a class="dropdown-item" routerLink="products" href="#">View Food Products</a> -->
+            <div class="dropdown-divider"></div>
+            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Branch Manager
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="saveMenu" href="#">Add Menu</a>
+            <a class="dropdown-item" routerLink="menu" href="#">See Menu Details</a>
+            <a class="dropdown-item" routerLink="saveProduct" href="#">Add Food Products</a>
+            <a class="dropdown-item" routerLink="products" href="#">View Food Products</a>
+            <div class="dropdown-divider"></div>
+            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+          </div>
+        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Staff
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="staff" href="#">Food Order Details</a>
+              <a class="dropdown-item" routerLink="order" href="#">Take Food Orders</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Registration
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="reg" href="#">Admin</a>
+              <a class="dropdown-item" routerLink="regStaff" href="#">Staff</a>
+              <a class="dropdown-item" routerLink="regManager" href="#">Branch Manager</a>
+              <div class="dropdown-divider"></div>
+              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Login
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="log" href="#">Admin</a>
+            <a class="dropdown-item" routerLink="Loginstaff" href="#">Staff</a>
+            <a class="dropdown-item" routerLink="Loginmanager" href="#">Branch Manager</a>
+            
+            <div class="dropdown-divider"></div>
+            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink='account' href="#">Account</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <button (click)="logout()">Logout</button>
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      </form>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  </div>
+  <!-- <h3>Welcome To Food App</h3> -->

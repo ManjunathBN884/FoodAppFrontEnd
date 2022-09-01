@@ -1,0 +1,85 @@
+<div class="container">
+
+    <h3>Food Order!</h3>
+
+    <form #reg="ngForm"(ngSubmit)="submit(reg)">
+
+        <div class="form-group">
+
+          <label for="exampleInputEmail1"></label>
+
+          <input type="text"
+
+          class="form-control"
+
+          ngModel
+
+          id="name"
+
+          name="name"
+
+          #name="ngModel"
+
+          placeholder="Enter Food Name"
+
+          [(ngModel)]="saveFoodOrder.name"
+
+        >
+
+        </div>
+        <div class="form-group">
+
+            <label for="exampleInputEmail1"></label>
+
+            <input type="number"
+
+            class="form-control"
+
+            ngModel
+
+            id="price"
+
+            name="price"
+
+            #price="ngModel"
+
+            placeholder="Enter Price"
+            [(ngModel)]="saveFoodOrder.price"
+
+          >
+
+          </div>
+
+   
+
+          <div class="form-group">
+
+            <label for="exampleInputEmail1"></label>
+
+            <input type="number"
+
+            class="form-control"
+
+            ngModel
+
+            id="staff"
+
+            name="staff"
+
+            #staff="ngModel"
+
+            placeholder="Enter Staff ID"
+            [(ngModel)]="saveFoodOrder.staff.id"
+            
+
+          >
+          
+
+          </div>
+          
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+ </div>
+

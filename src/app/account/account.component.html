@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Admin!</h3>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <!-- <th scope="col">City</th> -->
+                <!-- <th scope="col">Id</th> -->
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <!-- <td>{{}}</td> -->
+                <td>{{result.t.name}}</td>
+                <td>{{result.t.email}}</td>
+                <!-- <td>{{r.name}}</td> -->
+                <!-- <td>{{r.phone}}</td> -->
+                <td><button type="button" [routerLink]="['/updateAdmin',result.t.id]">Update</button></td>
+                <!-- <td><button type ="button" (click)="deleteMenu(r.id)">Delete</button></td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>

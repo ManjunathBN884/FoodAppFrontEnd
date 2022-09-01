@@ -1,0 +1,89 @@
+<div class="container">
+
+    <h3>Manager Details!</h3>
+
+    <form #reg="ngForm"(ngSubmit)="submit(reg)">
+
+        <div class="form-group">
+
+          <label for="exampleInputEmail1"></label>
+
+          <input type="text"
+
+          class="form-control"
+
+          ngModel
+
+          id="email"
+
+          name="email"
+
+          #email="ngModel"
+
+          placeholder="Enter  Email"
+
+        >
+
+        </div>
+        <div class="form-group">
+
+            <label for="exampleInputEmail1"></label>
+
+            <input type="text"
+
+            class="form-control"
+
+            ngModel
+
+            id="name"
+
+            name="name"
+
+            #name="ngModel"
+
+            placeholder="Enter Name"
+
+          >
+
+          </div>
+
+   
+
+          <div class="form-group">
+
+            <label for="exampleInputEmail1"></label>
+
+            <input type="text"
+
+            class="form-control"
+
+            ngModel
+
+            id="password"
+
+            name="password"
+
+            #password="ngModel"
+
+            placeholder="Enter password"
+
+          >
+
+          </div>
+          
+<div class="form-group">
+<label for="exampleInputEmail1"></label>
+<input type="text" 
+ class="form-control" 
+ngModel
+id="role"
+name="role"
+#role="ngModel"
+placeholder="Enter role"
+>
+</div>
+
+<button type="submit" class="btn btn-primary">Register</button>
+ </form>
+ </div>
+
